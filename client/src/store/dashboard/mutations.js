@@ -4,6 +4,10 @@ export const setGraphData = (state, value) => {
 
 }
 
+export const setSalesData = (state, value) => {
+	state.salesData = value
+}
+
 export const setSearchDate = (state, value) => {
 
 }

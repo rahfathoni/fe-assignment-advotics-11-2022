@@ -27,7 +27,7 @@
     </div>
   </div>
   <div v-if="dropdown.isOpen" class="row text-black justify-end">
-    <q-card class="">
+    <q-card flat bordered class="">
       <q-card-section>
         testing card
       </q-card-section>
@@ -61,11 +61,6 @@ export default {
     const expandDate = () => {
       dropdown.isOpen = dropdown.isOpen ? false : true;
       return;
-      // state.refreshLoading = true;
-      // const res = await store.dispatch("subsidiaryCorner/inqCompanyProduct");
-      // if (res) {
-      //   state.refreshLoading = false;
-      // }
     };
 
     return {

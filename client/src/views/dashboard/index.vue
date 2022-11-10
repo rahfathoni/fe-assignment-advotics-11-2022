@@ -1,7 +1,7 @@
 <template>
   <div class="height-page-v3">
     <DateForm class="q-pr-sm"/>
-    <MarketForm />
+    <MarketForm class="q-pt-xl"/>
   </div>
 </template>
 
@@ -21,6 +21,7 @@ export default {
     // MOUNTED
     onBeforeMount(async () => {
       store.commit("dashboard/reset");
+      await store.dispatch("dashboard/inquiryDataSales")
     });
 
     return {};
