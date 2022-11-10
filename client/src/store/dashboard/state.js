@@ -4,6 +4,7 @@ export default function () {
 		searchDate: {
 			start: '',
 			end: ''
-		}
+		},
+		salesData: {}
 	}
 }
